@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العيش الصديق للبيئة</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* تعيين الخط الأساسي والاتجاه */
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            direction: rtl;
+            line-height: 1.8;
+        }
+
+        /* تنسيق الهيدر */
+        header {
+            background: #2c6e49;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #388e3c;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* تنسيق القائمة */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+            border-bottom: 2px solid #ffcc00;
+        }
+
+        /* الهيرو (الخلفية) */
+        .hero {
+            background: url('C:/Users/أم بندر/Desktop/sadeem/image/1.JPG') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 5px solid #388e3c;
+        }
+
+        /* تنسيق المقالات */
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px;
+            background: #fff;
+        }
+        .article {
+            padding: 20px;
+            background: #e8f5e9;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+            border: 3px solid #388e3c;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .article:hover {
+            transform: scale(1.05);
+        }
+        .article img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        /* النصوص */
+        h1, h2, h3 {
+            text-decoration: underline;
+            text-decoration-color: #388e3c;
+            text-align: center;
+        }
+
+        /* الفوتر */
+        footer {
+            background: #2c6e49;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            border-top: 5px solid #388e3c;
+        }
+
+        /* تحسين التجاوب */
+        @media (max-width: 768px) {
+            .articles {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>العيش الصديق للبيئة</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#articles">المقالات</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>معًا نحو بيئة أكثر استدامة</h2>
+        </div>
+    </section>
+
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2>أحدث المقالات</h2>
+
+            <div class="article">
+                <img src="C:/Users/أم بندر/Desktop/sadeem/image/2.JPG" alt="بلاستيكات">
+                <h3>كيف تقلل من استهلاك البلاستيك؟</h3>
+                <p>تقليل البلاستيك يقلل التلوث ويحمي الحياة البحرية. استخدم أكياس قابلة لإعادة الاستخدام وتجنب المنتجات البلاستيكية ذات الاستخدام الواحد.</p>
+            </div>
+
+            <div class="article">
+                <img src="C:/Users/أم بندر/Desktop/sadeem/image/3.JPG" alt="إعادة التدوير">
+                <h3>أهمية إعادة التدوير</h3>
+                <p>إعادة التدوير توفر الموارد وتحافظ على البيئة. قم بفرز النفايات وإعادة تدوير الورق، البلاستيك، والزجاج للمساهمة في تقليل التلوث.</p>
+            </div>
+
+            <div class="article">
+                <img src="C:/Users/أم بندر/Desktop/sadeem/image/4.JPG" alt="أكياس بديلة">
+                <h3>استخدام الأكياس البديلة</h3>
+                <p>الأكياس القابلة لإعادة الاستخدام تقلل النفايات البلاستيكية وتحافظ على البيئة. اختر الأكياس القماشية أو الورقية بدلاً من البلاستيك.</p>
+            </div>
+
+            <div class="article">
+                <img src="C:/Users/أم بندر/Desktop/sadeem/image/5.JPG" alt="ترشيد استهلاك الماء">
+                <h3>ترشيد استهلاك الماء</h3>
+                <p>حافظ على المياه باستخدام طرق ري حديثة وإصلاح التسريبات. تقليل استهلاك الماء يحافظ على الموارد الطبيعية للأجيال القادمة.</p>
+            </div>
+
+            <div class="article">
+                <img src="C:/Users/أم بندر/Desktop/sadeem/image/6.JPG" alt="إضاءة LED">
+                <h3>استخدام إضاءة LED</h3>
+                <p>إضاءة LED تستهلك طاقة أقل وتدوم لفترة أطول مقارنة بالمصابيح التقليدية، مما يقلل من استهلاك الكهرباء.</p>
+            </div>
+
+            <div class="article">
+                <img src="C:/Users/أم بندر/Desktop/sadeem/image/7.JPG" alt="تقليل التلوث">
+                <h3>تقليل التلوث</h3>
+                <p>تقليل استخدام السيارات، الاعتماد على وسائل النقل العامة، وزراعة الأشجار يقلل التلوث ويحسن جودة الهواء.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 العيش الصديق للبيئة - جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>
